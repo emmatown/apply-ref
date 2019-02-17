@@ -3,6 +3,10 @@
   "version": "0.1.1",
   "main": "dist/apply-ref.cjs.js",
   "module": "dist/apply-ref.esm.js",
+  "files": [
+    "src",
+    "dist"
+  ],
   "license": "MIT",
   "devDependencies": {
     "preconstruct": "^0.0.31"
