@@ -1,4 +1,4 @@
-export default (ref, value) => {
+const apply = (ref, value) => {
   if (typeof ref === "object") {
     ref.current = value;
   }
@@ -6,3 +6,9 @@ export default (ref, value) => {
     ref(value);
   }
 };
+
+export const applyRefs = (...refs) => value => {
+  refs.forEach(ref => apply(ref, value));
+};
+
+export default apply;
