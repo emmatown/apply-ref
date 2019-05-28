@@ -1,5 +1,5 @@
 const apply = (ref, value) => {
-  if (typeof ref === "object") {
+  if (typeof ref === "object" && ref !== null) {
     ref.current = value;
   }
   if (typeof ref === "function") {
