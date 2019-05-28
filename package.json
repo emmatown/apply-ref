@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "preconstruct": "^0.0.31"
+  },
+  "scripts": {
+    "prepublishOnly": "preconstruct build"
   }
 }
