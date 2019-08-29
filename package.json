@@ -8,6 +8,15 @@
     "dist"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mitchellhamilton/apply-ref.git"
+  },
+  "keywords": [
+    "react",
+    "ref",
+    "resolve"
+  ],
   "devDependencies": {
     "preconstruct": "^0.0.31"
   },
