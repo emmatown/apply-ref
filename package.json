@@ -1,6 +1,6 @@
 {
   "name": "apply-ref",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/apply-ref.cjs.js",
   "module": "dist/apply-ref.esm.js",
   "files": [
