@@ -1,6 +1,6 @@
 import { Ref } from "react";
 
-const apply = <T>(ref: Ref<T>, value: T) => {
+const apply = <T>(ref: Ref<T>, value: T | null) => {
   if (typeof ref === "object" && ref !== null) {
     // @ts-ignore
     ref.current = value;
@@ -10,8 +10,8 @@ const apply = <T>(ref: Ref<T>, value: T) => {
   }
 };
 
-export const applyRefs = <T>(...refs: Ref<T>[]) => (value: T) => {
-  refs.forEach(ref => apply(ref, value));
+export const applyRefs = <T>(...refs: Ref<T>[]) => (value: T | null) => {
+  refs.forEach((ref) => apply(ref, value));
 };
 
 export default apply;
